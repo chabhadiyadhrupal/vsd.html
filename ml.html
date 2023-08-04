@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dhrupal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin 0;
+            padding: 0;
+            background-color:yellow;
+
+        }
+        #content
+        {
+            width: 100px;
+            height: auto;
+            margin-left: 0;
+            margin-right: 5;
+            padding: 25px;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .login-img
+        {
+            width: 40%;
+            height: auto;
+            margin-left: 5%;
+        }
+        .login-img img
+        {
+            width: 85%;
+
+        }
+        .login-form
+        {
+            width: 30%;
+            height: 250px;
+            margin-left: 2%;
+            background-color: slateblue;
+            padding: 25px;
+            margin-top: 5%;
+
+        }
+        input[type="text"], input[type="password"]
+        {
+            width: 250px;
+            height: auto;
+            padding: 8px;
+            border:none;
+            border-bottom: solid 2px black;
+        }
+        input[type="submit"]
+        {
+            width: 250px;
+            height: auto;
+            margin: auto;
+            padding: 8px;
+            background-color: lightcoral;
+            border: none;
+            color: white;
+
+        }
+        ::placeholder
+        {
+            color: blue;
+            font-size: 18px;
+        }
+        .navbar
+        {
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+        }
+        .navbar-brand
+        {
+            margin-left: 25px;
+            font-size: 25px;
+            color:white;
+            text-decoration: none;
+
+        }
+        .navbar-brand span
+        {
+            color: orange;
+
+        }
+        .navbar-link li
+        {
+            display: inline-block;
+            padding: 0px 20px;
+
+        }
+        .navbar-link a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+
+        }
+        .navbar-link a:hover
+        {
+            color: red;
+            
+        }
+        .navbar-link a:active
+        {
+            color: yellowgreen;
+
+        }
+        .navbar-link a:link
+        {
+            color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-top">
+        <a href="https://www.google.com/" class="navbar-brand"><span>app </span></a>
+        <ul class="navbar-link">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#"> account</a></li>
+            <li><a href="#"> contec</a></li>
+
+        </ul>
+    </div>
+    <section id="content">
+        <div class="login-image">
+            <img src="D:/267/bluekai-tc-hero.gif">
+
+        </div>
+        <div class="login-form">
+            <form>
+                
+                <input type="email" name="email" placeholder="enter your email*" required>
+                <input type="password" name="password" placeholder="enter your password*" required>
+                <input type="submit" name="submit" placeholder="submit*" value="login" required>
+                <a href="#">"forget password"</a>
+                <br><br>
+                <b>i dont have account?<a href="#" >creat your account</a></b>
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
