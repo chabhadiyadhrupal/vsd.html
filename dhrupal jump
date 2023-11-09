@@ -1,0 +1,30 @@
+using UnityEngine;
+
+public class JumpButton : MonoBehaviour
+{
+    public Rigidbody playerRigidbody;
+    public float jumpForce = 10f;
+
+    void Start()
+    {
+        // Make sure to assign the player's Rigidbody component in the Inspector.
+        if (playerRigidbody == null)
+        {
+            playerRigidbody = GetComponent<Rigidbody>();
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
+    }
+
+    void Jump()
+    {
+        // Apply a vertical force to make the player character jump.
+        playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+}
